@@ -1,0 +1,25 @@
+public class Main {
+	public static void main(String[] args) {
+
+		for (int i = 200; i <= 300; i++) {
+			int s = 0;
+			for (int y = 1; y < i; y++) {
+				if (i % y == 0) {
+					s += y;
+				}
+			}
+			int t = 0;
+			for (int y = 1; y < s; y++) {
+				if (s % y == 0) {
+					t += y;
+				}
+			}
+			if (t == i && s != i) {
+				int num1 = i;
+				int num2 = s;
+				System.out.println(num1 + " і " + num2);
+			}
+		}
+
+	}
+}
